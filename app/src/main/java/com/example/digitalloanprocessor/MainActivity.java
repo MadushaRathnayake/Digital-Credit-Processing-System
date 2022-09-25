@@ -33,13 +33,17 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+
+
         //admin and admin
         loginbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (username.getText().toString().equals("admin") && password.getText().toString().equals("123"))
-
-                    Toast.makeText(MainActivity.this,"Login Successfull", Toast.LENGTH_SHORT).show();
+                if (username.getText().toString().equals("admin") && password.getText().toString().equals("123")) {
+                    Toast.makeText(MainActivity.this, "Login Successfull", Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(MainActivity.this, userProfile.class);
+                    startActivity(intent);
+                }
                 else
                     //incorrect
                     Toast.makeText(MainActivity.this, "Login Failed", Toast.LENGTH_SHORT).show();
