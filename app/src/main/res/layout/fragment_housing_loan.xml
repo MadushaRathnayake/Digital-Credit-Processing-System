@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".housingLoan">
+
+    <TextView
+        android:id="@+id/creditcardHeading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Application for a Housing Loan"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="35dp"
+        android:layout_margin="20dp"
+        android:gravity="center"/>
+
+    <EditText
+        android:id="@+id/creditCardLimit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Loan Amount"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/creditcardHeading"
+        />
+
+    <EditText
+        android:id="@+id/dueDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter the Tenure (Months)"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/creditCardLimit"
+        />
+
+    <EditText
+        android:id="@+id/maidenName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Upload the Bill of Quantity/Cost Estimate"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/dueDate"
+        />
+
+
+    <EditText
+        android:id="@+id/referalName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Select the Colleteral/Security"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/maidenName"
+        />
+
+    <EditText
+        android:id="@+id/referalType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Upload the Approved Building Plan"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/referalName"
+        />
+
+    <EditText
+        android:id="@+id/referalmobileNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Upload Salary Slip (Only for Slaried clients)"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/referalType"
+        />
+
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/submitbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/referalmobileNumber"
+        android:layout_marginTop="0dp"
+        android:backgroundTint="@color/purple_700"
+        android:text="SUBMIT" />
+
+</RelativeLayout>

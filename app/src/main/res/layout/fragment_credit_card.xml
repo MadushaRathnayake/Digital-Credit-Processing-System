@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".creditCard">
+
+
+    <TextView
+        android:id="@+id/creditcardHeading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Application for a Credit Card"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="35dp"
+        android:layout_margin="20dp"
+        android:gravity="center"/>
+
+    <EditText
+        android:id="@+id/creditCardLimit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Credit Card Limit"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/creditcardHeading"
+        />
+
+    <EditText
+        android:id="@+id/dueDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Select your Due Date"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/creditCardLimit"
+        />
+
+    <EditText
+        android:id="@+id/maidenName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Your Mother's Mainden Name"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/dueDate"
+        />
+
+    <TextView
+        android:id="@+id/relationDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select a Relation who is Not Living With you"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:layout_margin="10dp"
+        android:gravity="left"
+        android:layout_below="@+id/maidenName"/>
+
+    <EditText
+        android:id="@+id/referalName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter the Name of the Relation"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/relationDetails"
+        />
+
+    <EditText
+        android:id="@+id/referalType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter the Relationship with the person"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/referalName"
+        />
+
+    <EditText
+        android:id="@+id/referalmobileNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter the Mobile Number of the Relation"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/referalType"
+        />
+    <EditText
+        android:id="@+id/referaladdress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter the Permanent Address of the Relation"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/referalmobileNumber"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/fileChooser"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/referaladdress"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="200dp"
+        android:backgroundTint="@color/purple_700"
+        android:text="Choose File"
+        android:onClick="openFilechooser"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/submitbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fileChooser"
+        android:layout_marginTop="0dp"
+        android:backgroundTint="@color/purple_700"
+        android:text="SUBMIT" />
+
+</RelativeLayout>

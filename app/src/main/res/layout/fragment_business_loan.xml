@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".businessLoan">
+
+    <TextView
+        android:id="@+id/businessLoanHeading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Application for Business Loan"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="35dp"
+        android:layout_margin="20dp"
+        android:gravity="center"/>
+
+    <EditText
+        android:id="@+id/loanAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Loan Amount"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/businessLoanHeading"
+        />
+
+    <EditText
+        android:id="@+id/tenure"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Loan Tenure (Months)"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/loanAmount"
+        />
+
+    <EditText
+        android:id="@+id/purpose"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter the Loan Purpose"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/tenure"
+        />
+
+
+
+    <EditText
+        android:id="@+id/securityDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Select the Security Type"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/purpose"
+        />
+
+
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/submitbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/securityDetails"
+        android:layout_marginTop="0dp"
+        android:backgroundTint="@color/purple_700"
+        android:text="SUBMIT" />
+
+</RelativeLayout>
