@@ -7,6 +7,35 @@
     android:id="@+id/drawer_layout"
     tools:context=".userProfile">
 
+    <!--
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome to the Virtual Willwin Bank"
+        android:id="@+id/welcome_slogan"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="35dp"
+        android:layout_marginTop="20dp"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="We bring all our credit facilities at your finggertips...!"
+        android:id="@+id/description"
+        android:textColor="@color/black"
+        android:textStyle="italic"
+        android:textSize="20dp"
+        android:layout_marginVertical="600dp"
+        android:textAlignment="center"/>
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/banklogo"
+        android:id="@+id/logo"/>
+-->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -17,7 +46,11 @@
            android:id="@+id/frameLayout"
            />
 
+
+
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+
 
     <com.google.android.material.navigation.NavigationView
         android:layout_width="wrap_content"
